@@ -1,4 +1,33 @@
 body {
     max-width: 600px;
     margin: 4em auto;
+    font-family: Arial, sans;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-bottom: 6px;
+}
+
+form input[type="submit"], form input[type="button"] {
+    float: right;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 14px;
+    width: 120px;
+    background-color: inherit;
+    border: 1px solid #428bca;
+    color: #428bca;
+    cursor: pointer;
 }
