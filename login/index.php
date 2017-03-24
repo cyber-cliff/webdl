@@ -1,6 +1,7 @@
 <?php
 
-include "dl/password.php";
+include "dl/config.php";
+include "password.php";
 
 $error = null;
 
@@ -18,10 +19,10 @@ if (isset($_POST["password"])) {
         <?php include "dl/includes.php"; ?>
     </head>
     <body>
+        <h1>Login <?php if ($error) echo "($error)"; ?></h1>
         <form action="/login/" method="post">
             <input name="password" type="password"/>
             <input type="submit"/>
-            <label name="error"><?php echo $error; ?></label>
         </form>
     </body>
 </html>

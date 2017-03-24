@@ -1,6 +1,7 @@
 <?php
 
-include "dl/password.php";
+include "dl/config.php";
+include "password.php";
 enforce("/login");
 
 ?>
@@ -20,7 +21,7 @@ enforce("/login");
             <input type="text" name="name" placeholder="name"/>
             <input type="text" name="format" placeholder="format" value="m4a"/>
             <input type="submit"/>
-            <input type="button" value="cancel" onclick="cancel()">
+            <input type="button" value="back" onclick="cancel()">
         </form>
     </body>
 </html>
